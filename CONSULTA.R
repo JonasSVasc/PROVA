@@ -30,7 +30,16 @@ dados2 = pivot_longer(dados,
                       values_to = "valor")  %>% 
   drop_na(valor)
 
+
 #drop na pra...né, tirar os na do bagui
+
+
+# PIVOT WINDER NAO PRECISA COLOCAR AS COLUNAS, SOMNENTE A COLUNA DA VARIAVEL E A COLUNA DO VALOR
+dados55 = pivot_wider(dados2,
+                      names_from = varr,
+                      values_from = valor)
+
+
 
 
 separate() #separa uma variavel do banco de dados em duas
